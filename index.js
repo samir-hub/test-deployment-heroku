@@ -6,11 +6,11 @@ app.get('/', (req, res) => {
   });
 
 app.get('/image', (req, res) => {
-  res.sendFile('C:/Users/slilienfeld/Tutorials/test-deployment-heroku/assets/image1.jpg')
+  res.sendFile('assets/image1.jpg' , { root : __dirname})
 });
 
 app.get('/video', (req, res) => {
-    res.sendFile('C:/Users/slilienfeld/Tutorials/test-deployment-heroku/assets/video1.mp4')
+    res.sendFile('assets/video1.mp4' , { root : __dirname})
   });
   
 
